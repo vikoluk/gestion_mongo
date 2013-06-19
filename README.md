@@ -1,10 +1,10 @@
-gestion_mongo
-=============
+Gestión Municipal Area de Deportes
+==================================
 
-Proyecto 2º Daw - Enrique Gonzalez Garcia
+<h4>Proyecto 2º Daw - Enrique Gonzalez Garcia</h4>
 
-Este proyecto contará con las siguientes tecnologías
+Este proyecto está desarrollado con las siguientes tecnologías
 
-1 - Base de datos MongoDB
-2 - Python con framework Bottle
+1 - Base de datos MongoDB <br>
+2 - Python con framework Bottle <br>
 3 - Foundation CSS/HTML
