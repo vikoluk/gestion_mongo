@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<title>Ayuntamiento de Kielce</title>
+
+<!-- CSS & JS
+  ================================================== -->
+	
+	<link rel="stylesheet" href="foundation.css">
+	<link rel="stylesheet" href="main.css">	
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	
+</head>
+<body>
+<div class="all">
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="header">
+				<h2 style="color:#FFFFFF;"><img src="kielce.png" style="width:100px;height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;Bienvenidos a Kielce</h2>
+			</div>				
+		</div>
+	</div>
+
+		
+	<div class="row">
+		<div class="large-6 columns large-offset-3">
+			<dl class="sub-nav">
+			  <dd><a href="/">Inicio</a></dd>
+			  <dd><a href="#">Tu Ayuntamiento</a></dd>
+			  <dd><a href="#">Administracion</a></dd>
+			  <dd><a href="/sports">Deportes</a></dd>
+			  <dd><a href="#">Cultura</a></dd>
+			</dl>
+		</div>
+	</div>
+	
+	<div class="row">
+		<h2>Error al intentar loguear. Vuelva a intentarlo <a href="/login">AQUI</a></h2>
+    </div>
+	
+			
+</div>
+
+
+<!-- Check for Zepto support, load jQuery if necessary -->
+<script>
+  document.write('<script src='
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>
+<script src="foundation.min.js"></script>
+
+<script>
+  $(document).foundation();
+</script>
+</body>
+
+</html>

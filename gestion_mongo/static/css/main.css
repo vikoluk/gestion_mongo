@@ -1,0 +1,83 @@
+html{
+	background-image: url("binding_light.png");
+}
+
+.all{
+	background-image: url("binding_light.png");
+}
+
+#welcome_title{
+	color:orange;
+}
+
+/*.error{
+	background-color:red;
+	border-radius: 5px;
+}*/
+
+/*Contenedor del slide*/
+.orbit-container{
+	background:none;
+}
+
+#error_crear_equipo_voleiball, #error_unirse_equipo_voleiball,
+#error_unirse_equipo_futbol,#error_crear_equipo_futbol,
+#error_unirse_equipo_balonmano, #error_crear_equipo_balonmano{
+	padding:1em;
+	background-color:#CC0033;
+	border-radius:5px;
+	color:#FFFFFF;
+	
+}
+
+#ok_crear_equipo_voleiball, #ok_unirse_equipo_voleiball,
+#ok_crear_equipo_futbol, #ok_unirse_equipo_futbol,
+#ok_crear_equipo_balonmano, #ok_unirse_equipo_balonmano{
+	padding:1em;
+	background-color:#19B271;
+	border-radius:5px;
+	color:#FFFFFF;
+	
+}
+
+#warning_crear_equipo_voleiball, #warning_unirse_equipo_voleiball,
+#warning_crear_equipo_futbol, #warning_unirse_equipo_futbol,
+#warning_crear_equipo_balonmano, #warning_unirse_equipo_balonmano{
+	padding:1em;
+	background-color:#E37222;
+	border-radius:5px;
+	color:#FFFFFF;
+	
+}
+
+.header{
+	background-image: url("debut_dark.png");
+	border:2px;
+	border-color:#FFFFFF;
+	border-radius:3px;
+	padding-left:40px;
+	padding-top:2px;
+	padding-bottom:2px;
+	color:#CECECE;
+	margin-bottom:15px;
+	
+}
+
+.sub-nav dt a, .sub-nav dd a {
+	margin-top:5px;
+	color: #313131;
+	text-decoration: none;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	font-weight: bold;
+}
+
+.sub-nav dt a:hover, .sub-nav dd a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	background: #2BA6CB;
+	padding:0.1875em 0.5625em;
+	border-radius:1000px;
+	font-weight: bold;
+}

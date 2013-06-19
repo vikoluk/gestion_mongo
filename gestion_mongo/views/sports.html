@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<title>Ayuntamiento de Kielce</title>
+
+<!-- CSS & JS
+  ================================================== -->
+	
+	<link rel="stylesheet" href="foundation.css">
+	<link rel="stylesheet" href="main.css">	
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	
+</head>
+<body>
+<div class="all">
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="header">
+				<h2 style="color:#FFFFFF;"><img src="kielce.png" style="width:100px;height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;Bienvenidos a Kielce</h2>
+			</div>				
+		</div>
+	</div>
+
+		
+	<div class="row">
+		<div class="large-6 columns large-offset-3">
+			<dl class="sub-nav">
+			  <dd><a href="/">Inicio</a></dd>
+			  <dd><a href="#">Tu Ayuntamiento</a></dd>
+			  <dd><a href="#">Administracion</a></dd>
+			  <dd class="active"><a href="/sports">Deportes</a></dd>
+			  <dd><a href="#">Cultura</a></dd>
+			</dl>
+		</div>
+	</div>
+
+<div class="row">
+	<div class="large-6 columns ">
+		<h2>Bienvenido {{username}}</h2>
+	</div>
+		<div class="large-4 columns large-offset-2"><ul class="button-group round even-3">
+          <li><a class="button small" href="/perfil">Perfil</a></li>
+          <li><a class="button small" href="/logout">Logout</a></li>          
+        </ul>
+    </div>        
+</div>
+
+<div class="row">
+	<p class="large-10 columns">Bienvenido al area de deportes de Kielce, aqui podras apuntarte a tus deportes favoritos. Actualmente disponemos de las siguientes disciplinas</p>
+	<hr />
+</div>
+
+
+
+<div class="row">
+	<div class="large-4 columns">
+		<h2>Voleiball</h2>
+		<img src="voleiball.jpg">
+		<h5><span class="radius secondary label">Tenemos {{num_equipos_voley}} equipos apuntados</span></h5>
+		<form method="post" id="form_crear_volei">
+			Crear equipo <br>
+			<input name="crear_equipo_voleiball" type="text" placeholder="Nombre de equipo" id="nombre_equipo_voleiball"><br>
+			<input type="submit" value="Crear equipo" class="small button">
+			<div id="error_crear_equipo_voleiball" style="display:none"></div>
+			<div id="ok_crear_equipo_voleiball" style="display:none"></div>
+			<div id="warning_crear_equipo_voleiball" style="display:none"></div>
+		</form>
+		
+		<form method="post" id="form_unirse_volei">
+			Unirse a equipo
+			<input name="unirse_equipo_voleiball" type="text" placeholder="Nombre de equipo" id="unirse_equipo_voleiball"><br>
+			<input class="small button" type="submit" value="Apuntame">
+			<div id="error_unirse_equipo_voleiball" style="display:none"></div>
+			<div id="ok_unirse_equipo_voleiball" style="display:none"></div>
+			<div id="warning_unirse_equipo_voleiball" style="display:none"></div>
+		</form>
+		
+	</div>
+	
+	<div class="large-4 columns">
+		<h2>Futbol</h2>
+		<img src="futbol.jpg">
+		<h5><span class="radius secondary label">Tenemos {{num_equipos_futbol}} equipos apuntados</span></h5>
+		<form method="post" id="form_crear_futbol">
+			Crear equipo <br>
+			<input name="crear_equipo_futbol" type="text" placeholder="Nombre de equipo" id="nombre_equipo_futbol"><br>
+			<input type="submit" value="Crear equipo" class="small button">
+			<div id="error_crear_equipo_futbol" style="display:none"></div>
+			<div id="ok_crear_equipo_futbol" style="display:none"></div>
+			<div id="warning_crear_equipo_futbol" style="display:none"></div>
+		</form>
+		<form method="post" id="form_unirse_futbol">
+			Unirse a equipo
+			<input name="unirse_equipo_futbol" type="text" placeholder="Nombre de equipo" id="unirse_equipo_futbol"><br>
+			<input class="small button" type="submit" value="Apuntame">
+			<div id="error_unirse_equipo_futbol" style="display:none"></div>
+			<div id="ok_unirse_equipo_futbol" style="display:none"></div>
+			<div id="warning_unirse_equipo_futbol" style="display:none"></div>
+		</form>
+	</div>
+
+	<div class="large-4 columns">
+		<h2>Balonmano</h2>
+		<img src="balonmano.jpg">
+		<h5><span class="radius secondary label">Tenemos {{num_equipos_balonmano}} equipos apuntados</span></h5>
+		<form method="post" id="form_crear_balonmano">
+			Crear equipo <br>
+			<input name="crear_equipo_balonmano" type="text" placeholder="Nombre de equipo" id="nombre_equipo_balonmano"><br>
+			<input type="submit" value="Crear equipo" class="small button">
+			<div id="error_crear_equipo_balonmano" style="display:none"></div>
+			<div id="ok_crear_equipo_balonmano" style="display:none"></div>
+			<div id="warning_crear_equipo_balonmano" style="display:none"></div>
+		</form>
+		
+		<form method="post" id="form_unirse_balonmano">
+			Unirse a equipo
+			<input name="unirse_equipo_balonmano" type="text" placeholder="Nombre de equipo" id="unirse_equipo_balonmano"><br>
+			<input class="small button" type="submit" value="Apuntame">
+			<div id="error_unirse_equipo_balonmano" style="display:none"></div>
+			<div id="ok_unirse_equipo_balonmano" style="display:none"></div>
+			<div id="warning_unirse_equipo_balonmano" style="display:none"></div>
+		</form>
+	</div>
+</div>
+
+
+<script src="jquery.js"></script>
+<script src="zepto.js"></script>
+<script src="foundation.min.js"></script>
+<script src="main.js"></script>
+
+<script>
+  $(document).foundation();
+</script>
+</body>
+
+</html>

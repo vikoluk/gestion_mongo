@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<title>Ayuntamiento Kielce</title>
+
+<!-- CSS & JS
+  ================================================== -->
+	
+	<link rel="stylesheet" href="foundation.css">
+	<link rel="stylesheet" href="main.css">
+	<script src="vendor/custom.modernizr.js"></script>
+	<script src="jquery.js"></script>
+	<script src="main.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	
+</head>
+<body>
+<div class="all">
+	
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="header">
+				<h2 style="color:#FFFFFF;"><img src="kielce.png" style="width:100px;height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;Bienvenidos a Kielce</h2>
+			</div>				
+		</div>
+	</div>
+
+		
+	<div class="row">
+		<div class="large-6 columns large-offset-3">
+			<dl class="sub-nav">
+			  <dd><a href="/">Inicio</a></dd>
+			  <dd><a href="#">Tu Ayuntamiento</a></dd>
+			  <dd><a href="#">Administracion</a></dd>
+			  <dd><a href="/sports">Deportes</a></dd>
+			  <dd><a href="#">Cultura</a></dd>
+			</dl>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="large-6 columns">
+			<h4>Perfil de {{username}}</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-6 columns">
+			<p>Equipos a los que estas apuntado:</p>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+		<div class="large-4 columns">
+			<h5>Voleyball</h5>
+			%if (equipo_voleiball != ""):
+			<h4>Nombre: {{equipo_voleiball}}</h4>
+			<input class="small button" id="borrar_voleyball" value="Borrame!">
+			%else:
+			<p>No formas parte de ningun equipo de voleiball</p> 	
+			%end	
+		</div>
+	
+		<div class="large-4 columns">
+			<h5>Futbol</h5>
+			%if (equipo_futbol != ""):
+			<h4>Nombre: {{equipo_futbol}}</h4>
+			<input class="small button" id="borrar_futbol" value="Borrame!">
+			%else:
+			<p>No formas parte de ningun equipo de futbol</p> 	
+			%end	
+		</div>
+		<div class="large-4 columns">
+			<h5>Balonmano</h5>
+			%if (equipo_balonmano != ""):
+			<h4>Nombre: {{equipo_balonmano}}</h4>
+			<input class="small button" id="borrar_balonmano" value="Borrame!">
+			%else:
+			<p>No formas parte de ningun equipo de balonmano</p> 	
+			%end	
+		</div>
+	</div>
+	
+</div>
+	
+
+</body>
+</html>
